@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body>
+    <h1>Registration Form</h1>
+    <form action="/submit"
+    method="post">
+    <label for="name">Name: </label>
+    <input type="text" id="name" name="name" placeholder="Enter your full name:" required ><br>
+    <br>
+    <label for="rollno">Roll No.:</label>
+    <input type="number" id="rollno" placeholder="Enter your roll no:" required><br>
+    <br>
+    <label for="email">Email: </label>
+    <input type="email" id="email" placeholder="Enter your email:" required><br>
+    <br>
+    <label for="contact">Contact No.: </label>
+    <input type="tel" id="contact" placeholder="Enter your contact no:" required><br>
+    <br>
+      
+    <label for="ens">Event Selection</label>
+    <select name="ens" id="ens" required>
+        <option value="">Select an event</option>
+        <option value="generaltopic">Debate on General Topics</option>
+        <option value="socialissues">Debate on Social Issues</option>
+        <option value="currentaffairs">Debate on Current Affairs</option>
+    </select><br>
+    <br>  
+    <label>Gender:</label><br>
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Female</label><br>
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="male">Male</label><br>
+    <input type="radio" id="other" name="gender" value="other">
+    <label for="other">Other</label><br>
+    <br>
+    <label for="cnd">Course and Department: </label>
+    <input type="text" id="cnd" placeholder="Enter your course and department:" required><br>
+    <br>
+    <label for="address">Message/Comments </label>
+    <textarea id="address" name="address" placeholder="Enter your message:" required></textarea><br>
+    <br>
+    <button type="submit">Submit</button>
+    <button type="reset">Reset</button>
+    </form>
+</body>
+</html>
